@@ -1,0 +1,76 @@
+.content__wrapper {
+    position: relative;
+    width: 70%;
+    margin: -10% auto 0 auto;
+  }
+
+.content__wrapper:before {
+  content: "";
+  display: block;
+  padding-top: 61.37%;
+}
+
+.buttons__wrapper {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#ryu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background: url('http://bennet.org/images/codepen/ryu-sprite-demo.png') no-repeat 0 0%;
+  background-size: 100%;
+  animation: sprite .3s steps(6) infinite;
+  animation-direction: alternate, reverse, normal;
+}
+
+#ryu.jab {
+  background: url('http://bennet.org/images/codepen/ryu-sprite-demo.png') no-repeat 0 0%;
+  background-size: 100%;
+  animation: jab .25s steps(4) infinite;
+  animation-direction: normal;
+}
+
+#ryu.hadouken {
+  background: url('http://bennet.org/images/codepen/ryu-sprite-demo.png') no-repeat 0 0%;
+  background-size: 100%;
+  animation: hadouken .75s steps(11) normal;
+  animation-direction: normal;
+}
+
+@keyframes sprite {
+  from {
+    background-position: 0 0%;
+  }
+
+  to {
+    background-position: 0 13.33%;
+  }
+}
+
+@keyframes jab {
+  from {
+    background-position: 0 24.44%;
+  }
+
+  to {
+    background-position: 0 33.33%;
+  }
+}
+
+@keyframes hadouken {
+  from {
+    background-position: 0 75.55%;
+  }
+
+  to {
+    background-position: 0 100%;
+  }
+}
