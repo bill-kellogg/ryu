@@ -4,3 +4,8 @@ This repo uses http-server which can be installed globally:
 ```
 npm i http-server -g
 ```
+
+To start the local server:
+```
+npm run start
+```
